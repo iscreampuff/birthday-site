@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: birthday-site
+    runtime: node
+    branch: master
+    buildCommand: |
+      npm run install-client
+      npm run build
+      npm install
+    startCommand: npm start
+    env: node
+    nodeVersion: 18.x

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: friend-birthday-site
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    env: node

@@ -1,0 +1,22 @@
+{
+  "name": "birthday-site",
+  "version": "1.0.0",
+  "description": "For 孔雅楠",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-client": "npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "author": "Kristine Ng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {}
+}
